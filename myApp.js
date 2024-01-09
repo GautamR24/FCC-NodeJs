@@ -13,6 +13,6 @@ app.use("/public", express.static(__dirname + "/public"));
 //creating the json route
 
 app.get("/json", function (req, res) {
-  res.send({ message: "Hello json" });
+  res.json({ message: "Hello json" });
 });
 module.exports = app;
